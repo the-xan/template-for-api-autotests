@@ -1,4 +1,4 @@
-package com.example.tests.demowebshop;
+package com.example.projects.demowebshop;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
@@ -10,7 +10,7 @@ import org.openqa.selenium.Cookie;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
-import static com.example.helpers.CustomApiListener.withCustomTemplates;
+import static com.example.projects.reqres.utils.CustomApiListener.withCustomTemplates;
 import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
 import static java.lang.String.format;
