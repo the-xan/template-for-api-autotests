@@ -1,4 +1,4 @@
-package com.example.tests.reqres.model.get;
+package com.example.projects.reqres.model.get;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jdk.jfr.Description;
