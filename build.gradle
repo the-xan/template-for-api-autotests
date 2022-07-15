@@ -2,14 +2,22 @@ plugins {
     id 'java-library'
     id "io.qameta.allure" version "2.9.6"
     id "io.freefair.lombok" version "6.0.0-m2"
+    id 'java'
 }
 
 repositories {
     mavenCentral()
 }
 
-group 'com.example'
-version '1.0'
+group = 'com.example'
+version = '1.0'
+sourceCompatibility = '11'
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
 
 def allureVersion = "2.18.1",
     selenideVersion = "6.6.3",
@@ -52,6 +60,8 @@ dependencies {
             //assertJ
             "org.assertj:assertj-core:$assertJ"
     )
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
 }
 
 tasks.withType(JavaCompile) {
