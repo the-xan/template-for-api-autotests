@@ -4,10 +4,12 @@ import com.example.projects.reqres.utils.DateDeserializer;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.time.LocalDateTime;
 
 @Data
+@EqualsAndHashCode(callSuper=true)
 public class CreateUserResponse extends UserRequest{
     private int id;
     //для указания необходимого формата нужно использовать аннотацию @JsonFormat

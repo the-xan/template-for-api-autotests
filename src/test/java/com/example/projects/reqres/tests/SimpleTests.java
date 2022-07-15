@@ -38,7 +38,6 @@ public class SimpleTests {
             .log(BODY)
             .build();
 
-
     @Test
     @DisplayName("Simple logging test")
     void loginTest() {
